@@ -93,8 +93,9 @@ client.on('interactionCreate', async interaction => {
     }
     else if(interaction.isButton()) {
         //a space separates the type of interaction and the name of the queue channel
-        const type = interaction.customId.split(" ")[0]
-        const queue_name = interaction.customId.split(" ")[1]
+        const pos = interaction.customId.indexOf(" ")
+        const type = interaction.customId.substr(0, pos)
+        const queue_name = interaction.customId.substr(pos + 1, 0)
 
         if(!(interaction.member instanceof GuildMember)) {
             interaction.deferUpdate()
