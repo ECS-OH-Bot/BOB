@@ -98,13 +98,12 @@ client.on('interactionCreate', async interaction => {
         const queue_name = interaction.customId.substring(pos + 1)
 
         if(!(interaction.member instanceof GuildMember)) {
-            interaction.deferUpdate()
-            await interaction.reply({content: `Erm. Somethings wrong, this shouldn't happen. I'll inform the humaniod that maintains me`, ephemeral: true})
             console.error(`Recieved an interaction without a member from user ${interaction.user} on server ${interaction.guild}`)
             return;
         }
 
         if(type === 'join') {
+            interaction.deferUpdate()
             await server.EnqueueUser(queue_name, interaction.member).catch((errstr : Error) => {
                 if(interaction.member instanceof GuildMember) {
                     interaction.member.send(errstr.message)
