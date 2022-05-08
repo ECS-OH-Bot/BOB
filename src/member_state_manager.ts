@@ -52,6 +52,7 @@ export class MemberState {
     }
 
     TryAddToQueue(queue: HelpQueue): void {
+
         if(this.current_queue !== null) {
             throw new UserError('Already enqueued')
         } else if (this.start_helping_timestamp !== null) {
@@ -63,10 +64,10 @@ export class MemberState {
 
     TryRemoveFromQueue(queue: HelpQueue | null = null): void {
         if(this.current_queue === null) {
-            throw new UserError('Not in queue')
+            throw new UserError('You are not in the queue')
         }
         if(queue !== null && queue !== this.current_queue) {
-            throw new UserError('Not in requested queue')
+            throw new UserError('You are not in the requested queue')
         }
         this.start_wait_timestamp = null
         this.current_queue = null

@@ -64,6 +64,14 @@ export class AttendingServer {
         return queue_count
     }
 
+    async RemoveMember(queue_name: string, member: GuildMember): Promise<void> {
+        const queue = this.queues.find(queue => queue.name == queue_name)
+        if (queue === undefined) {
+            throw new UserError(`There is not a queue with the name ${queue_name}`)
+        }
+        await queue.Remove(member)
+    }
+
     async AddHelper(member: GuildMember): Promise<void> {
         const helpable_queues = this.GetHelpableQueues(member)
         if (helpable_queues.length == 0) {
@@ -105,7 +113,7 @@ export class AttendingServer {
         const start_time = this.member_states.GetMemberState(member).StopHelping()
         // Update the attendance log in the background
         void this.UpdateAttendanceLog(member, start_time).catch(err => {
-            console.error(`Failed to update the attendance log for ${member.user.username} who helped for ${Math.round((Date.now() - start_time)/6000)} mins`)
+            console.error(`Failed to update the attendance log for ${member.user.username} who helped for ${Math.round((Date.now() - start_time)/60000)} mins`)
             console.error(`Error: ${err}`)
         })
         return Date.now() - start_time
@@ -209,6 +217,7 @@ export class AttendingServer {
         const queue = this.queues.find(queue => queue.name == queue_name)
         if (queue === undefined) {
             throw new UserError(`There is not a queue with the name ${queue_name}`)
+
         }
         if (!queue.is_open) {
             throw new UserError(`The queue "${queue_name}" is currently closed.`)

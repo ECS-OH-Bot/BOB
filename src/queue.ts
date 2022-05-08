@@ -1,4 +1,5 @@
-import { Client, GuildMember, TextChannel } from "discord.js";
+import { channelMention } from "@discordjs/builders";
+import { ButtonInteraction, Client, Collector, GuildMember, MessageActionRow, MessageButton, TextChannel } from "discord.js";
 import { MemberState, MemberStateManager } from "./member_state_manager";
 import { UserError } from "./user_action_error";
 // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -18,7 +19,7 @@ export class HelpQueueDisplayManager {
         const status_line = `The queue is **${queue.is_open ? 'OPEN' : 'CLOSED'}**. There ${quant_prase} in the queue.\n`
         if(queue.length > 0) {
             const table = new AsciiTable()
-            table.setHeading('Position', 'Name')
+            table.setHeading('Position', 'Username')
             queue_members.forEach((state, idx) => table.addRow(idx + 1, state.member.user.username))
             return status_line + '```\n' + table.toString() + '\n```'
         }
@@ -34,10 +35,34 @@ export class HelpQueueDisplayManager {
                     messages.clear()
                 }
                 const message_text = this.GetQueueText(queue, queue_members)
+                const buttons = new MessageActionRow()
+                    .addComponents(
+                        new MessageButton()
+                        .setCustomId('join ' + queue.name) 
+                        .setEmoji('✅')
+                        .setDisabled(!queue.is_open)
+                        .setLabel('Join Queue')
+                        .setStyle('SUCCESS')
+                    )
+                    .addComponents(
+                        new MessageButton()
+                        .setCustomId('leave ' + queue.name)
+                        .setEmoji('❎')
+                        .setDisabled(!queue.is_open)
+                        .setLabel('Leave Queue')
+                        .setStyle('DANGER')
+                    )
+
                 if (messages.size == 0) {
-                    return this.display_channel.send(message_text).then(message => message.pin())
+                    return this.display_channel.send({
+                        content: message_text,
+                        components: [buttons]
+                    }).then(message => message.pin())
                 } else {
-                    return messages.first()?.edit(message_text)
+                    return messages.first()?.edit({
+                        content: message_text,
+                        components: [buttons]
+                    })
                 }
             }).then(() => undefined)
 
@@ -70,7 +95,7 @@ export class HelpQueue {
     }
 
     async Clear(): Promise<void> {
-        this.queue.forEach(member => member.TryRemoveFromQueue())
+        this.queue.forEach(member => member.TryRemoveFromQueue(this))
         this.queue = []
         await this.UpdateDisplay()
     }
@@ -126,7 +151,7 @@ export class HelpQueue {
         if(user_state === undefined) {
             throw new UserError('Empty queue')
         }
-        user_state.TryRemoveFromQueue()
+        user_state.TryRemoveFromQueue(this)
 
         await this.UpdateDisplay()
         return user_state

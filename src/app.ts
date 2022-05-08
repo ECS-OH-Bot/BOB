@@ -6,6 +6,8 @@ import * as dotenv from 'dotenv'
 import { PostSlashCommands } from './slash_commands';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 import * as gcs_creds from '../gcs_service_account_key.json'
+import { SlashCommandRoleOption } from '@discordjs/builders';
+import { HelpQueue } from './queue';
 
 dotenv.config()
 
@@ -59,6 +61,7 @@ client.on('ready', async () => {
     ))
 
     console.log('Ready to go!')
+
 });
 
 async function JoinGuild(guild: Guild): Promise<AttendingServer> {
@@ -74,7 +77,7 @@ client.on('guildCreate', async guild => {
 })
 
 client.on('interactionCreate', async interaction => {
-    if (!interaction.isCommand()) return;
+    if (!interaction.isCommand() && !interaction.isButton()) return;
     if (interaction.guild === null) {
         await interaction.reply('Sorry, I dont respond to direct messages.')
         return
@@ -85,8 +88,39 @@ client.on('interactionCreate', async interaction => {
         server = await JoinGuild(interaction.guild)
     }
     await server.EnsureHasRole(interaction.member as GuildMember)
+    if(interaction.isCommand()) {
+        await ProcessCommand(server, interaction)
+    }
+    else if(interaction.isButton()) {
+        //a space separates the type of interaction and the name of the queue channel
+        const type = interaction.customId.split(" ")[0]
+        const queue_name = interaction.customId.split(" ")[1]
 
-    await ProcessCommand(server, interaction)
+        if(!(interaction.member instanceof GuildMember)) {
+            interaction.deferUpdate()
+            await interaction.reply({content: `Erm. Somethings wrong, this shouldn't happen. I'll inform the humaniod that maintains me`, ephemeral: true})
+            console.error(`Recieved an interaction without a member from user ${interaction.user} on server ${interaction.guild}`)
+            return;
+        }
+
+        if(type === 'join') {
+            await server.EnqueueUser(queue_name, interaction.member).catch((errstr : Error) => {
+                if(interaction.member instanceof GuildMember) {
+                    interaction.member.send(errstr.message)
+                }
+            })
+        } else if(type === 'leave') {
+            interaction.deferUpdate()
+             await server.RemoveMemberFromQueues(interaction.member).catch((errstr : Error) => {
+                if(interaction.member instanceof GuildMember && errstr.name == 'UserError') {
+                    interaction.member.send(errstr.message)
+                }
+             })
+        } else {
+            console.error('Received invalid button interaction')
+        }
+        return
+    }
 });
 
 client.on('guildMemberAdd', async member => {
