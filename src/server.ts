@@ -109,15 +109,6 @@ export class AttendingServer {
             if (sheets_id !== null) {
                 me.tutor_info_sheet = me.tutor_info_doc.sheetsById[parseInt(sheets_id)]
             }
-            // if(me.tutor_info_sheet !== null) {
-            //     let rows: GoogleSpreadsheetRow[]
-            //     rows = await me.tutor_info_sheet.getRows()
-            //     let NameColNum = me.tutor_info_sheet.headerValues.indexOf("Calendar Name")
-            //     let IDColNum = me.tutor_info_sheet.headerValues.indexOf("Discord ID")
-            //     await rows.forEach(row => {
-            //         console.log(row._rawData[NameColNum], row._rawData[IDColNum])
-            //     })
-            // }
         }
 
         await me.DiscoverQueues()
@@ -833,6 +824,7 @@ disabled. To enable it, do `/post_session_msg enable: true`"
         const maxItems: number = 5
 
         let table = new String
+        table = "Upcoming Hours for **" + queue_name + "** : \n\n"
         //table.setHeading('Name', 'ST', 'ET', 'RST', 'RET')
 
         await data.items.forEach((event: { summary: string; start: { dateTime: string; }; end: { dateTime: string; }; }) => {
