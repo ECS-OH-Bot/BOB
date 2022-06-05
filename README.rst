@@ -192,8 +192,8 @@ Requirements
 -  `Node.js (includes npm) <https://nodejs.org/en/download/>`__ 
 
 -  `Discord <https://discordapp.com/>`__ app & account
--  `Google Cloud `__ account, service account & Google Calendar API KEY
--  `Firebase (Google)`__  Firestore Database & assosciated service account
+-  `Google Cloud ` account, service account & Google Calendar API KEY
+-  `Firebase (Google)`  Firestore Database & assosciated service account
 
 Quick Start
 -----------
@@ -259,13 +259,13 @@ For the ``when_next`` command to work, two things are required:
 2. A Google Sheets that lists "calendar names" and their corresponding discord IDs
 
    -  The sheets must have the following two columns. The sheet may have other columns, but the titles (i.e. the cells on the first row), must each be unique
-      a. A column titled "Calendar Name" that lists calendar names for users.
-      b. A column titled "Discord ID" that lists the corresponding discord (snowflake) IDs of the calendar name
+      -  A column titled "Calendar Name" that lists calendar names for users.
+      -  A column titled "Discord ID" that lists the corresponding discord (snowflake) IDs of the calendar name
       Note: Discord ID is __not__ your discord username or nickname. Read to know how to get the snowflake ID of a discord user: <https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID->
 
    -  The bot must have access to read the google sheets. This can be done either by
-      a. Setting the google sheets to public. i.e. allow anyone with the link can (at least) view the document
-      b. If the sheet is private, sending the bot an invite to access the sheet.
+      -  Setting the google sheets to public. i.e. allow anyone with the link can (at least) view the document
+      -  If the sheet is private, sending the bot an invite to access the sheet.
 
 `Docs <https://ecs-oh-bot.github.io/OH-Bot/docs/build/html/index.html>`__
 =========================================================================
