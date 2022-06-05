@@ -303,8 +303,19 @@ class SetCalendarHandler implements CommandHandler {
                 return
             }
 
-            let response = await server.setTutorCalendar(calendar_link)
-            await interaction.editReply(response)
+            //https://calendar.google.com/calendar/embed?src=[calendar_id]&[otherstuff]
+
+            let header: string = "https://calendar.google.com/calendar/embed?src="
+            let gidSep: string = "&"
+            const posHeader = calendar_link.indexOf(header)
+            const posGidSep = calendar_link.indexOf(gidSep)
+            if (posHeader === 0 && posGidSep > header.length) {
+                const calendar_id = calendar_link.substring(header.length, posGidSep)
+                let response = await server.setTutorCalendar(calendar_id)
+                await interaction.editReply(response)
+            } else {
+                await interaction.editReply("Link is invalid")
+            }
 
         } else if (subcommand === 'set_sheets') {
             const sheets_link = interaction.options.getString('sheets_link')
@@ -317,7 +328,7 @@ class SetCalendarHandler implements CommandHandler {
                 return
             }
 
-            //https://docs.google.com/spreadsheets/d/1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc/edit#gid=409631471
+            //https://docs.google.com/spreadsheets/d/[doc_id]/edit#gid=[sheet_id]
             //find substring/pos after 'https://docs.google.com/spreadsheets/d/'
             //split by /edit#gid=
 

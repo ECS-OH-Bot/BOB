@@ -751,15 +751,15 @@ disabled. To enable it, do `/post_session_msg enable: true`"
             if (this.tutor_info_calendar !== calendar_id) {
                 const tutorData = {
                     tutor_info_calendar: calendar_id,
-                    tutor_info_doc: this.tutor_info_doc,
-                    tutor_info_sheet: this.tutor_info_sheet
+                    tutor_info_doc: this.tutor_info_doc?.spreadsheetId,
+                    tutor_info_sheet: this.tutor_info_sheet?.sheetId
                 }
                 await this.firebase_db.collection('tutor_info').doc(this.server.id).set(tutorData)
             }
 
             this.tutor_info_calendar = calendar_id
 
-            return "connected to the calendar: " + calendarName
+            return "Connected to the Google calendar: " + calendarName
         }
     }
 
@@ -798,7 +798,7 @@ disabled. To enable it, do `/post_session_msg enable: true`"
             this.tutor_info_doc = tutor_doc
             this.tutor_info_sheet = tutor_sheet
 
-            return "connected to the sheets: " + tutor_doc.title + " -> " + tutor_sheet.title
+            return "Connected to the Google Sheet document: " + tutor_doc.title + " -> " + tutor_sheet.title
         }
     }
 
@@ -808,15 +808,15 @@ disabled. To enable it, do `/post_session_msg enable: true`"
      * @returns 
      */
     async getUpcomingHoursTable(queue_name: string): Promise<string> {
+        if (this.tutor_info_calendar === null || this.tutor_info_doc === null || this.tutor_info_sheet === null) {
+            return "The necessary resources for this command to work have not been set up. Please contact an admin to set it up"
+        }
+
         let helpersMap = await this.GetHelpersForQueue(queue_name)
 
         // Get all the corresponding first names via the google sheets doc
 
         let helpersNameMap = await this.getQueueHelpersFirstNames()
-
-        if (helpersMap === null && helpersNameMap === null) {
-            return "The necessary resources for this command to work have not been set up. Please contact an admin to set it up"
-        }
 
         let minDate = new Date()
         let maxDate = new Date()
@@ -832,8 +832,8 @@ disabled. To enable it, do `/post_session_msg enable: true`"
         let numItems: number = 0
         const maxItems: number = 5
 
-        const table = new AsciiTable()
-        table.setHeading('Name', 'ST', 'ET', 'RST', 'RET')
+        let table = new String
+        //table.setHeading('Name', 'ST', 'ET', 'RST', 'RET')
 
         await data.items.forEach((event: { summary: string; start: { dateTime: string; }; end: { dateTime: string; }; }) => {
             const helperName = event.summary.split(' ')[0]
@@ -842,6 +842,8 @@ disabled. To enable it, do `/post_session_msg enable: true`"
                 
                 let helper = helpersMap.get(discordID)
 
+                //use https://hammertime.cyou/en-GB for refernce on how to display dynamic time on discord
+
                 if (helper !== undefined && discordID !== null && numItems < maxItems) {
                     let userPing = '<@' + helper.id + '>'
                     
@@ -849,23 +851,30 @@ disabled. To enable it, do `/post_session_msg enable: true`"
                     startTime.setTime(Date.parse(event.start.dateTime))
                     let startTimeEpoch = startTime.getTime().toString()
                     startTimeEpoch = startTimeEpoch.substring(0, startTimeEpoch.length - 3)
-                    let startTimeString = '<t:' + startTimeEpoch + ':F>'
+                    
+                    let startTimeString = '<t:' + startTimeEpoch + ':d>'
+                    let relativeStartTime = "<t:" + startTimeEpoch + ":R>"
 
                     let endTime = new Date()
                     endTime.setTime(Date.parse(event.end.dateTime))
                     let endTimeEpoch = endTime.getTime().toString()
                     endTimeEpoch = endTimeEpoch.substring(0, endTimeEpoch.length - 3)
-                    let endTimeString = '<t:' + endTimeEpoch + ':F>'
-
-                    let relativeStartTime = "<t:" + startTimeEpoch + ":R>"
+                    
+                    let endTimeString = '<t:' + endTimeEpoch + ':d>'
                     let relativeEndTime = "<t:" + endTimeEpoch + ":R>"
-                    table.addRow(userPing, startTimeString, endTimeString, relativeStartTime, relativeEndTime)
+                    
+                    table = table + userPing + " | Starts at " + startTimeString + " which is " + relativeStartTime 
+                    + " | Ends at: " + endTimeString + " which is " + relativeEndTime + "\n"
+                    
                     numItems++
                 }
             }
         })
-
-        return "testing" + '\n' + table.toString() + '\n'
+        if(numItems === 0) {
+            return 'There are no scheduled hours for this queue in next 7 days.'
+        } else {
+            return '\n' + table + '\n'
+        }
     }
 
     /**
