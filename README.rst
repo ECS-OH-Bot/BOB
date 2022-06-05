@@ -40,7 +40,7 @@ like queue management and notifying students are
 handled by **BOB**
 
 **BOB** is a *self-hotsted* bot - meaning that you will need to host
-and maintain your own instance. See `Quick Start <#quickstart>`__ to
+and maintain your own instance. See `Quick Start <#quick-start>`__ to
 get started.
 
 The standard OH-Session protocol that we follow: 
@@ -77,7 +77,7 @@ Commands
 
 **BOB** commands have access level based on sender roles
 
-**Commands available to everyone: **
+**Commands available to everyone:**
 
 -  ``/enqueue [queue_name] (user)`` - Access Role: [Admin, Helper, Student]
 
@@ -104,7 +104,7 @@ Commands
 
    - Lists up to 5 upcoming office hours in the next 7 days listed on the calendar (which is set using `/calendar set_calendar`)
 
-**Commands available to helpers: **
+**Commands available to helpers:**
 
 -  ``/start`` - Access Role: [Admin, Helper]
 
@@ -134,7 +134,7 @@ Commands
    -  Option ``queue_name`` : Clears only the queue ``queue_name``
    -  Option ``all`` : Clears all queues
 
-**Commands available to admins: **
+**Commands available to admins:**
 
 -  ``/queue add [queue_name]`` - Access Role: [Admin]
 
@@ -157,12 +157,12 @@ Commands
 -  ``/calendar set_calendar [calendar_link]`` - Access Role: [Admin]
 
    - Sets the calendar for the server that lists the helper's office hours. Must be a public calendar. \
-   Read `How to set up when_next <#How to set up when_next>`__ for more details
+   Read `How to set up when_next <#how-to-set-up-when_next>`__ for more details
 
 -  ``/calendar set_sheets [sheets_link]`` - Access Role: [Admin]
 
    - Sets the google sheets for the server that lists the Calendar names and their corresponding Discord IDs. Must be a public calendar. \ 
-   Read `How to set up when_next <#How to set up when_next>`__ for more details.
+   Read `How to set up when_next <#how-to-set-up-when_next>`__ for more details.
 
 Queue Buttons
 ~~~~~~~~~~~~~
@@ -247,7 +247,7 @@ For security/privacy purposes, bot/scripts are not allowed to adjust themselves 
 .. image:: ./assets/adjustRole.gif
 
 How to set up when_next
-~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------
 
 For the ``when_next`` command to work, two things are required:
 
