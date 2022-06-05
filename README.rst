@@ -136,7 +136,7 @@ Commands
    - Option ``enable``: If set to true, will send the message to a helpee after their session. If set to false, doesn't send the message
    - Option ``change_message``: If set to true, grabs the last message, and if sent by the user, sets that message as the new message that BOB will send to the helpee
 
--  ``/after_tutor_message revert [setTrue]`` - Access Role: [Admin]
+-  ``/after_tutor_message revert`` - Access Role: [Admin]
 
    - Reverts the message that BOB sends to helpee to the one it used previously. BOB doesn't not hold more than one previous message at a time.
 
@@ -164,10 +164,11 @@ Requirements
 -  `Node.js (includes npm) <https://nodejs.org/en/download/>`__ 
 
 -  `Discord <https://discordapp.com/>`__ app & account
-- `Google Cloud `__ account & service account
+-  `Google Cloud `__ account & service account
+-  `Firebase (Google)`__  Firestore Database & assosciated service account
 
 Quick Start
---------------------------
+-----------
 
 Instantiate an instance of a server in Discord 
 
@@ -192,7 +193,9 @@ Make a ``.env`` file in the current directory with the following format:
    BOB_APP_ID=[Insert Discord Application ID here]
    BOB_BOT_TOKEN=[Insert Discord BOT Token here]
 
-Also create a .json file in the current directory named ``gcs_service_account_key.json`` which you get get from the Google Cloud website
+Create a .json file in the current directory named ``gcs_service_account_key.json`` which you get get from the Google Cloud website
+
+Create a .json file in the current directory named ``fbs_service_account_key.json`` which you can get from your Firebase Project -> Settings -> Service account
 
 Run the following command to setup the bot locally
 

@@ -1,0 +1,2713 @@
+
+> better-oh-bot@1.0.0 start
+> node dist/src/app.js
+
+B.O.B. V2.1
+Logged in as BOB-test#5027!
+Scanning servers I am a part of...
+Found 2 server(s)
+Connected to Google sheets.
+Connected to Firebase database
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 2,
+  _rawData: [
+    '5/7/2022 19:08:27',
+    'Ben Hassner',
+    'bhassner@ucdavis.edu',
+    'TisButAScratch#7682',
+    'I have, and I agree',
+    'Yes',
+    "Please remember, I am doing this late because of the confusions that took place throughout this quarter, and am on board for 1 unit per week due to high schedule conflicts. Also, I'm not 100% sure what you meant by ID for discord, so I put my username (TisButAScratch) followed by my tag (#7682)",
+    '689313109357232158',
+    'Ben'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 3,
+  _rawData: [
+    '4/28/2022 3:19:45',
+    'Jingkun Zhao',
+    'zjkzhao@ucdavis.edu',
+    'Jingkun#7118',
+    'I have, and I agree',
+    'Yes',
+    '',
+    '892973828198780999',
+    'Jingkun'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 4,
+  _rawData: [
+    '4/25/2022 11:05:43',
+    'Thomas Screven',
+    'tsscreven@ucdavis.edu',
+    'Thomas Screven#0266',
+    'I have, and I agree',
+    'I am volunteering ("0 units")',
+    'No.',
+    '888266762108432466',
+    'Thomas'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 5,
+  _rawData: [
+    '4/22/2022 11:10:46',
+    'Nate Buttke',
+    'ngbuttke@ucdavis.edu',
+    'buttke#6686',
+    'I have, and I agree',
+    'Yes',
+    'I am re-filling this form in order to correct my Discord ID to buttke#6686, not the permanent "Copy ID" number.',
+    '884979683710623744',
+    'Nate'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 6,
+  _rawData: [
+    '4/21/2022 14:37:22',
+    'Renjie Sun',
+    'rjsun@ucdavis.edu',
+    'RJ Sun#9313',
+    'I have, and I agree',
+    'I am volunteering ("0 units")',
+    '',
+    '964958499459178526',
+    'Renjie'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 7,
+  _rawData: [
+    '4/21/2022 14:13:49',
+    'Renjie Sun',
+    'rjsun@ucdavis.edu',
+    'RJ Sun#9313',
+    'I have, and I agree',
+    'I am volunteering ("0 units")',
+    '',
+    '964958499459178526',
+    'Renjie'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 8,
+  _rawData: [
+    '4/20/2022 12:45:29',
+    'Aurielle Jocom',
+    'ajocom@ucdavis.edu',
+    'crasteraine',
+    'I have, and I agree',
+    'I am volunteering ("0 units")',
+    '',
+    '516432274959368216',
+    'Aurielle'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 9,
+  _rawData: [
+    '4/20/2022 10:13:13',
+    'Nate Buttke',
+    'ngbuttke@ucdavis.edu',
+    'buttke#6686',
+    'I have, and I agree',
+    'Yes',
+    '',
+    '884979683710623744',
+    'Nate'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 10,
+  _rawData: [
+    '4/19/2022 20:07:10',
+    'Vibha Raju',
+    'vraju@ucdavis.edu',
+    'Vibha#8612',
+    'I have, and I agree',
+    'I am volunteering ("0 units")',
+    '',
+    '754427379811876917',
+    'Vibha'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 11,
+  _rawData: [
+    '4/19/2022 19:37:41',
+    'Minghao Lin',
+    'mhlin@ucdavis.edu',
+    'HugoL#3812',
+    'I have, and I agree',
+    'I am volunteering ("0 units")',
+    '',
+    '801513117951197185',
+    'Minghao'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 12,
+  _rawData: [
+    '4/19/2022 18:54:11',
+    'Vibha Raju',
+    'vraju@ucdavis.edu',
+    'Vibha#8612',
+    'I have, and I agree',
+    'I am volunteering ("0 units")',
+    '',
+    '754427379811876917',
+    'Vibha'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 13,
+  _rawData: [
+    '4/19/2022 13:20:37',
+    'Andy Lam',
+    'atlam@ucdavis.edu',
+    'andee#0134',
+    'I have, and I agree',
+    'Yes',
+    '',
+    '251024687855828992',
+    'Andy'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 14,
+  _rawData: [
+    '4/19/2022 12:32:13',
+    'Lukas nixon',
+    'lenixon@ucdavis.edu',
+    'LukaN#1423',
+    'I have, and I agree',
+    'I am volunteering ("0 units")',
+    '',
+    '271855380731002880',
+    'Lukas'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 15,
+  _rawData: [
+    '4/19/2022 9:09:03',
+    'Kairey Wang',
+    'kacwang@ucdavis.edu',
+    'frenchsquare#5971',
+    'I have, and I agree',
+    'I am volunteering ("0 units")',
+    '',
+    '694977082714751027',
+    'Kairey'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 16,
+  _rawData: [
+    '4/18/2022 23:19:19',
+    'Minghao Lin',
+    'mhlin@ucdavis.edu',
+    'HugoL',
+    'I have, and I agree',
+    'I am volunteering ("0 units")',
+    'my discord ID # is 3812',
+    '801513117951197185',
+    'Minghao'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 17,
+  _rawData: [
+    '4/18/2022 21:10:36',
+    'Haixu Qin',
+    'qinqin@ucdavis.edu',
+    'hq#7233',
+    'I have, and I agree',
+    'I am volunteering ("0 units")',
+    '',
+    '740099721762177114',
+    'Haixu'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 18,
+  _rawData: [
+    '4/18/2022 17:04:12',
+    'Dingxian Wang',
+    'wdxwang@ucdavis.edu',
+    '点心Dingxian#7708',
+    'I have, and I agree',
+    'I am volunteering ("0 units")',
+    '',
+    '738471429691146315',
+    'Dingxian'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 19,
+  _rawData: [
+    '4/18/2022 13:26:57',
+    'Jonathan Heilong Lim',
+    'heilim@ucdavis.edu',
+    'LeBob#5174',
+    'I have, and I agree',
+    'I am volunteering ("0 units")',
+    '',
+    '384471766057222154',
+    'Jonathan'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 20,
+  _rawData: [
+    '4/18/2022 12:26:43',
+    'Zhaolin Zhong',
+    'zzlzhong@ucdavis.edu',
+    'Jay_Z#5379',
+    'I have, and I agree',
+    'Yes',
+    '',
+    '795324280732516353',
+    'Zhaolin'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 21,
+  _rawData: [
+    '4/18/2022 11:33:38',
+    'Marina Johnson',
+    'mnjohnson@ucdavis.edu',
+    'MarinaJohnson#1179',
+    'I have, and I agree',
+    'I am volunteering ("0 units")',
+    '',
+    '692856567481237595',
+    'Marina'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 22,
+  _rawData: [
+    '4/18/2022 11:26:57',
+    'Thomas Screven',
+    'tsscreven@ucdavis.edu',
+    'Thomas Screven#0266',
+    'I have, and I agree',
+    'I am volunteering ("0 units")',
+    '',
+    '888266762108432466',
+    'Thomas'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 23,
+  _rawData: [
+    '4/18/2022 10:32:02',
+    'Gabriel Russell Umboh',
+    'grumboh@ucdavis.edu',
+    'Le Umbono#4939',
+    'I have, and I agree',
+    'Yes',
+    '',
+    '319787188478935040',
+    'Russell'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 24,
+  _rawData: [
+    '4/18/2022 9:19:33',
+    'Zifei Cheng',
+    'zfcheng@ucdavis.edu',
+    'Fiiona#3485',
+    'I have, and I agree',
+    'I am volunteering ("0 units")',
+    '',
+    '801996337192501278',
+    'Zifei'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 25,
+  _rawData: [
+    '4/18/2022 8:53:33',
+    'Renjie Sun',
+    'rjsun@ucdavis.edu',
+    'RJ Sun#9313',
+    'I have, and I agree',
+    'I am volunteering ("0 units")',
+    '',
+    '964958499459178526',
+    'Renjie'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 26,
+  _rawData: [
+    '4/18/2022 8:48:52',
+    'Brandon Huynh',
+    'blhuynh@ucdavis.edu',
+    'Bobasaur#4595',
+    'I have, and I agree',
+    'Yes',
+    '',
+    '458457872775380995',
+    'Brandon'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 27,
+  _rawData: [
+    '4/18/2022 8:33:38',
+    'Brandon Huynh',
+    'blhuynh@ucdavis.edu',
+    'Bobasaur#4595',
+    'I have, and I agree',
+    'Yes',
+    '',
+    '458457872775380995',
+    'Brandon'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 28,
+  _rawData: [
+    '4/18/2022 8:21:59',
+    'Vincent Huang',
+    'vinhuang@ucdavis.edu',
+    'Hcent#0262',
+    'I have, and I agree',
+    'I am volunteering ("0 units")',
+    '',
+    '271492704389562368',
+    'Vincent'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 29,
+  _rawData: [
+    '4/18/2022 8:08:31',
+    'Yoobin Jin',
+    'ybcjin@ucdavis.edu',
+    'yoyo_#0452',
+    'I have, and I agree',
+    'I am volunteering ("0 units")',
+    '',
+    '616465633156005919',
+    'Yoobin'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 30,
+  _rawData: [
+    '4/18/2022 2:57:21',
+    'Steven Lin',
+    'stvlin@ucdavis.edu',
+    'Steveñ#0001',
+    'I have, and I agree',
+    'I am volunteering ("0 units")',
+    '',
+    '186638491914862593',
+    'Steven'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 31,
+  _rawData: [
+    '4/18/2022 2:36:15',
+    'Renjie Sun',
+    'rjsun@ucdavis.edu',
+    'RJ Sun#9313',
+    'I have, and I agree',
+    'I am volunteering ("0 units")',
+    'I would like to have 1 unit in ecs197T instead of being volunteering. It helps if I can be informed the CRN and things I should know.',
+    '964958499459178526',
+    'Renjie'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 32,
+  _rawData: [
+    '4/16/2022 13:34:39',
+    'He Li',
+    'heili@ucdavis.edu',
+    'Sylvia#5913',
+    'I have, and I agree',
+    'Yes',
+    '',
+    '760639207777239051',
+    'He'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 33,
+  _rawData: [
+    '4/14/2022 22:10:31',
+    'Xueqian (Brian) Li',
+    'xqnli@ucdavis.edu',
+    'bongo-cat#2662',
+    'I have, and I agree',
+    'Yes',
+    '',
+    '211628396948488193',
+    'Brian'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 34,
+  _rawData: [
+    '4/14/2022 13:01:19',
+    'Ashley Valdez',
+    'amvaldez@ucdavis.edu',
+    'Applesauce🍎#2770',
+    'I have, and I agree',
+    'Yes',
+    '',
+    '789997180433858590',
+    'Ashley'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 35,
+  _rawData: [
+    '4/14/2022 8:52:36',
+    'John Mema',
+    'jdmema@ucdavis.edu',
+    'JohnJohn#4845',
+    'I have, and I agree',
+    'Yes',
+    '',
+    '655704367093121035',
+    'John'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 36,
+  _rawData: [
+    '4/13/2022 22:09:16',
+    'Deepa Marti',
+    'drmarti@ucdavis.edu',
+    'deepamarti#0769',
+    'I have, and I agree',
+    'Yes',
+    '',
+    '663909684557905920',
+    'Deepa'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 37,
+  _rawData: [
+    '4/13/2022 19:25:51',
+    'Kevin Guan',
+    'zeyguan@ucdavis.edu',
+    'NULL#5190',
+    'I have, and I agree',
+    'Yes',
+    'Resubmitting because I entered the wrong Discord ID.',
+    '644371840634060842',
+    'Kevin'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 38,
+  _rawData: [
+    '4/13/2022 17:59:28',
+    'Brandon Lap-Yun Huynh',
+    'blhuynh@ucdavis.edu',
+    'Bobasaur#4595',
+    'I have, and I agree',
+    'Yes',
+    '',
+    '458457872775380995',
+    'Brandon'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 39,
+  _rawData: [
+    '4/13/2022 13:01:09',
+    'Kevin Guan',
+    'zeyguan@ucdavis.edu',
+    'NULL#5190',
+    'I have, and I agree',
+    'Yes',
+    '',
+    '644371840634060842',
+    'Kevin'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 40,
+  _rawData: [
+    '4/13/2022 11:42:05',
+    'Ryan Yu',
+    'ryuyu@ucdavis.edu',
+    'Enkarai#5437',
+    'I have, and I agree',
+    'Yes',
+    'I will likely remain flexible in terms of my tutoring hours, but will definitely provide assistance.',
+    '207986006840836097',
+    'Ryan'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 41,
+  _rawData: [
+    '4/13/2022 8:30:39',
+    'Kenneth Villafana',
+    'kenvil@ucdavis.edu',
+    'Kenvillaf#5433',
+    'I have, and I agree',
+    'Yes',
+    '',
+    '349765797293326346',
+    'Kenneth'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 42,
+  _rawData: [
+    '4/13/2022 1:07:25',
+    'Yunhua Fang',
+    'yhufang@ucdavis.edu',
+    'Yunhua Fang#6960',
+    'I have, and I agree',
+    'Yes',
+    '',
+    '762832053095104542',
+    'Yunhua'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 43,
+  _rawData: [
+    '4/12/2022 23:35:44',
+    'Ky Ngo',
+    'ktngo@ucdavis.edu',
+    'ʞʎouʎʞ#8573',
+    'I have, and I agree',
+    'Yes',
+    '',
+    '287433497340280833',
+    'Ky'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 44,
+  _rawData: [
+    '4/12/2022 23:26:11',
+    'Matthew Schulz',
+    'mkschulz@ucdavis.edu',
+    'yessirski#5407',
+    'I have, and I agree',
+    'Yes',
+    'N/A',
+    '690768541833494611',
+    'Matthew'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 45,
+  _rawData: [
+    '4/12/2022 22:56:14',
+    'Kaoushik Murugan',
+    'kmurugan@ucdavis.edu',
+    'KMMineCube#3702',
+    'I have, and I agree',
+    'Yes',
+    '',
+    '367630872066654209',
+    'Kaoushik'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 46,
+  _rawData: [
+    '4/12/2022 22:42:44',
+    'Lateef Sanford',
+    'lsanford@ucdavis.edu',
+    'Leptos#8564',
+    'I have, and I agree',
+    'Yes',
+    '',
+    '462679770203815946',
+    'Lateef'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 47,
+  _rawData: [
+    '4/12/2022 22:37:06',
+    'Athul Krishna Sughosh',
+    'asughosh@ucdavis.edu',
+    'sike#3997',
+    'I have, and I agree',
+    'Yes',
+    '',
+    '692362297242550335',
+    'Athul'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 48,
+  _rawData: [
+    '4/12/2022 20:25:23',
+    'Xueqian (Brian) Li',
+    'xqnli@ucdavis.edu',
+    'harambe#2662',
+    'I have, and I agree',
+    'Yes',
+    '',
+    '211628396948488193',
+    'Brian'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 49,
+  _rawData: [
+    '4/12/2022 20:24:05',
+    'Lena Ray',
+    'sbhattach@ucdavis.edu',
+    'lr135#9490',
+    'I have, and I agree',
+    'Yes',
+    '',
+    '710668222352850996',
+    'Lena'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 50,
+  _rawData: [
+    '4/12/2022 20:18:31',
+    'Linhao Chen',
+    'hghchen@ucdavis.edu',
+    'Lenhart28#9797',
+    'I have, and I agree',
+    'Yes',
+    '',
+    '536282405087084554',
+    'Linhao'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+GoogleSpreadsheetRow {
+  _sheet: GoogleSpreadsheetWorksheet {
+    _spreadsheet: GoogleSpreadsheet {
+      spreadsheetId: '1eYEXekQOTsTTANo8qgasMqvghkc9Y0Z96_VVQB1hByc',
+      authMode: 'JWT',
+      _rawSheets: [Object],
+      _rawProperties: [Object],
+      axios: [Function],
+      jwtClient: [JWT]
+    },
+    _rawProperties: {
+      sheetId: 763550279,
+      title: 'Form Responses 1',
+      index: 0,
+      sheetType: 'GRID',
+      gridProperties: [Object]
+    },
+    _cells: [],
+    _rowMetadata: [],
+    _columnMetadata: [],
+    headerValues: [
+      'Timestamp',
+      'Full Name',
+      'UC Davis email',
+      'Discord Username',
+      'Confirm that you have read the above, and that you agree to abide by the tutoring policies',
+      'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?',
+      'Anything else we should know?',
+      'Discord ID',
+      'Calendar Name'
+    ]
+  },
+  _rowNumber: 51,
+  _rawData: [
+    '4/12/2022 20:16:16',
+    'Tsung-Chieh',
+    'tcjchen@ucdavis.edu',
+    'Tsung Chieh Chen#2500',
+    'I have, and I agree',
+    'Yes',
+    '',
+    '405508389872074773',
+    'Tsung-Chieh'
+  ],
+  Timestamp: [Getter/Setter],
+  'Full Name': [Getter/Setter],
+  'UC Davis email': [Getter/Setter],
+  'Discord Username': [Getter/Setter],
+  'Confirm that you have read the above, and that you agree to abide by the tutoring policies': [Getter/Setter],
+  'Have you registered in schedule builder for ECS 197T credits using the CRN we sent?': [Getter/Setter],
+  'Anything else we should know?': [Getter/Setter],
+  'Discord ID': [Getter/Setter],
+  'Calendar Name': [Getter/Setter]
+}
+Updated slash commands on "Testing Server 2 Boogaloo"
+Updated slash commands on "KMMineCube's Testing Server"
+Ready to go!

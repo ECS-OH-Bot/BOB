@@ -7,8 +7,11 @@ import { PostSlashCommands } from './slash_commands';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 import * as gcs_creds from '../gcs_service_account_key.json'
 import * as fbs_creds from '../fbs_service_account_key.json'
+import { ProcessButtonPress } from './button_handler';
 const { initializeApp, cert } = require('firebase-admin/app');
 const { getFirestore } = require('firebase-admin/firestore');
+
+import fetch from 'node-fetch'
 
 dotenv.config()
 
@@ -30,6 +33,8 @@ const client = new Client({
 })
 
 const servers: Collection<Guild, AttendingServer> = new Collection()
+
+var firebase_db: any = null
 
 void client.login(process.env.BOB_BOT_TOKEN)
 
@@ -56,16 +61,32 @@ client.on('ready', async () => {
     }
 
     //Connect to the firebase database
-
     initializeApp({
         credential: cert(fbs_creds)
     })
 
-    const db = getFirestore()
+    firebase_db = getFirestore()
     console.log('Connected to Firebase database')
 
+    let minDate = new Date()
+        let maxDate = new Date()
+        maxDate.setDate(minDate.getDate() + 14)
+
+        // //  'https://www.googleapis.com/calendar/v3/calendars/c_4nekt8ut9t99cj07oj3i4q0ndg%40group.calendar.google.com/events?orderBy=startTime&singleEvents=true&timeMax=2022-06-19T02%3A18%3A57.767Z&timeMin=2022-06-05T01%3A26%3A51.162Z&key=[YOUR_API_KEY]' 
+        // const response = await fetch('https://www.googleapis.com/calendar/v3/calendars/' + 'c_4nekt8ut9t99cj07oj3i4q0ndg%40group.calendar.google.com' + 
+        // '/events?orderBy=startTime&singleEvents=true&timeMax=' + maxDate.toISOString() 
+        // + '&timeMin=' + minDate.toISOString() 
+        // + '&key=' + process.env.BOB_GOOGLE_CALENDAR_API_KEY);
+        
+        // const data = await response.json();
+        // data.items.forEach((event: { start: any; }) => {
+        //     let date = new Date()
+        //     date.setTime((Date.parse(event.start.dateTime)))
+        //     console.log(date)
+        // });
+
     await Promise.all(full_guilds.map(guild =>
-        AttendingServer.Create(client, guild, db, attendance_doc)
+        AttendingServer.Create(client, guild, firebase_db, attendance_doc)
             .then(server => servers.set(guild, server))
             .then(() => PostSlashCommands(guild))
             .catch((err: Error) => {
@@ -78,11 +99,13 @@ client.on('ready', async () => {
 
 async function JoinGuild(guild: Guild): Promise<AttendingServer> {
     console.log(`Joining guild ${guild.name}`)
-    initializeApp({
-        credential: cert(fbs_creds)
-    })
-    const db = getFirestore()
-    const server = await AttendingServer.Create(client, guild, db)
+    if (firebase_db === null) {
+        initializeApp({
+            credential: cert(fbs_creds)
+        })
+        firebase_db = getFirestore()
+    }
+    const server = await AttendingServer.Create(client, guild, firebase_db)
     await PostSlashCommands(guild)
     servers.set(guild, server)
     return server
@@ -113,44 +136,9 @@ client.on('interactionCreate', async interaction => {
     if (interaction.isCommand()) {
         await ProcessCommand(server, interaction)
     }
-
     //if the interaction is a button
     else if (interaction.isButton()) {
-        //a space separates the type of interaction and the name of the queue channel
-        const pos = interaction.customId.indexOf(" ")
-        const type = interaction.customId.substring(0, pos)
-        const queue_name = interaction.customId.substring(pos + 1)
-
-        if (!(interaction.member instanceof GuildMember)) {
-            console.error(`Recieved an interaction without a member from user ${interaction.user} on server ${interaction.guild}`)
-            return
-        }
-
-        if (type === 'join') {
-            interaction.deferUpdate()
-            await server.EnqueueUser(queue_name, interaction.member).catch((errstr: Error) => {
-                if (interaction.member instanceof GuildMember) {
-                    interaction.member.send(errstr.message)
-                }
-            })
-        } else if (type === 'leave') {
-            interaction.deferUpdate()
-            await server.RemoveMemberFromQueues(interaction.member).catch((errstr: Error) => {
-                if (interaction.member instanceof GuildMember && errstr.name == 'UserError') {
-                    interaction.member.send(errstr.message)
-                }
-            })
-        } else if (type === 'notif') {
-            interaction.deferUpdate()
-            await server.JoinNotifcations(interaction.member, queue_name).catch((errstr: Error) => {
-                if (interaction.member instanceof GuildMember && errstr.name == 'UserError') {
-                    interaction.member.send(errstr.message)
-                }
-            })
-        } else {
-            console.error('Received invalid button interaction')
-        }
-        return
+        await ProcessButtonPress(server, interaction)
     }
 });
 
@@ -211,6 +199,7 @@ client.on('messageDelete', async message => {
     if (category === null)
         return
     await server.EnsureQueueSafe(category.name)
+    await server.ForceQueueUpdate(category.name)
 })
 
 //incase someone sends a message in the queue channel
