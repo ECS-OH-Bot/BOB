@@ -293,7 +293,7 @@ class SetCalendarHandler implements CommandHandler {
     async Process(server: AttendingServer, interaction: CommandInteraction) {
         const subcommand = interaction.options.getSubcommand()
         if (subcommand === 'set_calendar') {
-            const calendar_link = interaction.options.getString('calendar_link')
+            let calendar_link = interaction.options.getString('calendar_link')
             if (calendar_link === null) {
                 throw new UserError('You must provide a string for calendar_link.')
             }
@@ -306,11 +306,10 @@ class SetCalendarHandler implements CommandHandler {
             //https://calendar.google.com/calendar/embed?src=[calendar_id]&[otherstuff]
 
             let header: string = "https://calendar.google.com/calendar/embed?src="
-            let gidSep: string = "&"
+            calendar_link = calendar_link.split('&')[0]
             const posHeader = calendar_link.indexOf(header)
-            const posGidSep = calendar_link.indexOf(gidSep)
-            if (posHeader === 0 && posGidSep > header.length) {
-                const calendar_id = calendar_link.substring(header.length, posGidSep)
+            if (posHeader === 0) {
+                const calendar_id = calendar_link.substring(header.length)
                 let response = await server.setTutorCalendar(calendar_id)
                 await interaction.editReply(response)
             } else {
