@@ -14,7 +14,6 @@ import { GoogleSpreadsheet, GoogleSpreadsheetRow, GoogleSpreadsheetWorksheet } f
 import * as gcs_creds from '../gcs_service_account_key.json'
 
 import fetch from 'node-fetch'
-import { MAXIMUM_TEST_PHONE_NUMBERS } from "firebase-admin/lib/auth/auth-config";
 const AsciiTable = require('ascii-table');
 
 export class AttendingServer {
@@ -803,7 +802,11 @@ disabled. To enable it, do `/post_session_msg enable: true`"
         }
     }
 
-
+    /**
+     * Returns a table that lists the start and end times of upcoming events for this queue
+     * @param queue_name 
+     * @returns 
+     */
     async getUpcomingHoursTable(queue_name: string): Promise<string> {
         let helpersMap = await this.GetHelpersForQueue(queue_name)
 
@@ -819,19 +822,12 @@ disabled. To enable it, do `/post_session_msg enable: true`"
         let maxDate = new Date()
         maxDate.setDate(minDate.getDate() + 14)
 
-        //  'https://www.googleapis.com/calendar/v3/calendars/c_4nekt8ut9t99cj07oj3i4q0ndg%40group.calendar.google.com/events?singleEvents=true&timeMax=2022-06-19T02%3A18%3A57.767Z&timeMin=2022-06-05T01%3A26%3A51.162Z&key=[YOUR_API_KEY]' \
-
         const response = await fetch('https://www.googleapis.com/calendar/v3/calendars/' + this.tutor_info_calendar +
             '/events?orderBy=startTime&singleEvents=true&timeMax=' + maxDate.toISOString()
             + '&timeMin=' + minDate.toISOString()
             + '&key=' + process.env.BOB_GOOGLE_CALENDAR_API_KEY);
 
         const data = await response.json();
-        // data.items.forEach((event: { start: any; }) => {
-        //     let date = new Date()
-        //     date.setTime((Date.parse(event.start.dateTime)))
-        //     console.log(date)
-        // });
 
         let numItems: number = 0
         const maxItems: number = 5
@@ -839,15 +835,12 @@ disabled. To enable it, do `/post_session_msg enable: true`"
         const table = new AsciiTable()
         table.setHeading('Name', 'ST', 'ET', 'RST', 'RET')
 
-        //console.log("testing 12-039854-1029385-0198350938")
-
         await data.items.forEach((event: { summary: string; start: { dateTime: string; }; end: { dateTime: string; }; }) => {
             const helperName = event.summary.split(' ')[0]
             let discordID = helpersNameMap?.get(helperName)
-            //console.log("testing: ", helperName, "|", discordID, "|", event.start.dateTime)
             if (discordID !== undefined && discordID !== null) {
                 let helper = helpersMap.get(discordID)
-                //console.log("testing pt2: ", helper?.nickname)
+
                 if (helper !== undefined && discordID !== null) {
                     let userPing = '<@' + helper.id + '>'
                     
@@ -865,7 +858,6 @@ disabled. To enable it, do `/post_session_msg enable: true`"
 
                     let relativeStartTime = "<t:" + startTimeEpoch + ":R>"
                     let relativeEndTime = "<t:" + endTimeEpoch + ":R>"
-                    //console.log(userPing, startTimeString, endTimeString, relativeStartTime, relativeEndTime)
                     table.addRow(userPing, startTimeString, endTimeString, relativeStartTime, relativeEndTime)
                 }
             }

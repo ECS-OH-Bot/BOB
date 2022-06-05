@@ -11,8 +11,6 @@ import { ProcessButtonPress } from './button_handler';
 const { initializeApp, cert } = require('firebase-admin/app');
 const { getFirestore } = require('firebase-admin/firestore');
 
-import fetch from 'node-fetch'
-
 dotenv.config()
 
 if (process.env.BOB_BOT_TOKEN === undefined || process.env.BOB_APP_ID === undefined) {
@@ -71,19 +69,6 @@ client.on('ready', async () => {
     let minDate = new Date()
         let maxDate = new Date()
         maxDate.setDate(minDate.getDate() + 14)
-
-        // //  'https://www.googleapis.com/calendar/v3/calendars/c_4nekt8ut9t99cj07oj3i4q0ndg%40group.calendar.google.com/events?orderBy=startTime&singleEvents=true&timeMax=2022-06-19T02%3A18%3A57.767Z&timeMin=2022-06-05T01%3A26%3A51.162Z&key=[YOUR_API_KEY]' 
-        // const response = await fetch('https://www.googleapis.com/calendar/v3/calendars/' + 'c_4nekt8ut9t99cj07oj3i4q0ndg%40group.calendar.google.com' + 
-        // '/events?orderBy=startTime&singleEvents=true&timeMax=' + maxDate.toISOString() 
-        // + '&timeMin=' + minDate.toISOString() 
-        // + '&key=' + process.env.BOB_GOOGLE_CALENDAR_API_KEY);
-        
-        // const data = await response.json();
-        // data.items.forEach((event: { start: any; }) => {
-        //     let date = new Date()
-        //     date.setTime((Date.parse(event.start.dateTime)))
-        //     console.log(date)
-        // });
 
     await Promise.all(full_guilds.map(guild =>
         AttendingServer.Create(client, guild, firebase_db, attendance_doc)
