@@ -820,7 +820,7 @@ disabled. To enable it, do `/post_session_msg enable: true`"
 
         let minDate = new Date()
         let maxDate = new Date()
-        maxDate.setDate(minDate.getDate() + 14)
+        maxDate.setDate(minDate.getDate() + 7)
 
         const response = await fetch('https://www.googleapis.com/calendar/v3/calendars/' + this.tutor_info_calendar +
             '/events?orderBy=startTime&singleEvents=true&timeMax=' + maxDate.toISOString()
@@ -839,9 +839,10 @@ disabled. To enable it, do `/post_session_msg enable: true`"
             const helperName = event.summary.split(' ')[0]
             let discordID = helpersNameMap?.get(helperName)
             if (discordID !== undefined && discordID !== null) {
+                
                 let helper = helpersMap.get(discordID)
 
-                if (helper !== undefined && discordID !== null) {
+                if (helper !== undefined && discordID !== null && numItems < maxItems) {
                     let userPing = '<@' + helper.id + '>'
                     
                     let startTime = new Date()
@@ -859,6 +860,7 @@ disabled. To enable it, do `/post_session_msg enable: true`"
                     let relativeStartTime = "<t:" + startTimeEpoch + ":R>"
                     let relativeEndTime = "<t:" + endTimeEpoch + ":R>"
                     table.addRow(userPing, startTimeString, endTimeString, relativeStartTime, relativeEndTime)
+                    numItems++
                 }
             }
         })
