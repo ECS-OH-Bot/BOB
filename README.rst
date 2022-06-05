@@ -251,12 +251,12 @@ How to set up when_next
 
 For the ``when_next`` command to work, two things are required:
 
-1. A Public Google Calendar shows the office hours of the helpers
+-  A Public Google Calendar shows the office hours of the helpers
    -  The Calendar must be PUBLIC
    -  Each office hour event on the calendar must start with a "calendar name", which is a unique identifier for each Helper. They may use their own names, or something else. But it must be consistant across all their events.
    -  A space must be present after the "calendar name" to seperate it from other text in the event title
 
-2. A Google Sheets that lists "calendar names" and their corresponding discord IDs
+-  A Google Sheets that lists "calendar names" and their corresponding discord IDs
 
    -  The sheets must have the following two columns. The sheet may have other columns, but the titles (i.e. the cells on the first row), must each be unique
       -  A column titled "Calendar Name" that lists calendar names for users.
